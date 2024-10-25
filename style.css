@@ -8,12 +8,14 @@
 
 html {
     margin: 0;
-    padding: 0;
+    padding: 1.2rem 2.4rem;
     font-family: 'Epilogue', arial, serif;
     font-weight: 500 700;
 }
 
 #navbar {
+    display: inline;
+    width: fit-content;
     min-height: 10rem;
     background-color: green;
 }
@@ -24,7 +26,48 @@ html {
     justify-content: space-between;
 }
 
+#navbar-left {
+    display: flex;
+    justify-content: space-evenly;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+    background-color: red;
+}
+
 #logo {
-    background-color: aliceblue;
-    min-height: 1rem;
+    min-height: 3rem;
+    padding: 1rem 3rem;
+    flex: 1;
+    text-align: center;
+    margin: auto;
+}
+
+#logo img {
+    padding-top: 0.8rem;
+    display: block;
+    width: 7rem;
+    margin: auto;
+}
+
+#logo span {
+    padding: 10px;
+    text-align: center;
+}
+
+#navbar-links-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+
+#navbar-links-left ul li a {
+    text-decoration: none;
 }
